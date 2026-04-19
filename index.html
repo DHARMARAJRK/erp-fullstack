@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SUNDEEP POS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍾 SUNDEEP Liquor POS</h1>
+
+<h2>Add Product</h2>
+<input id="name" placeholder="Name">
+<input id="carton" type="number" placeholder="Cartons">
+<input id="bpc" type="number" placeholder="Bottles/Carton">
+<input id="loose" type="number" placeholder="Loose Bottles">
+<input id="price" type="number" placeholder="Price">
+<button onclick="addProduct()">Add</button>
+
+<div class="container">
+    <div class="left">
+        <h2>Products</h2>
+        <ul id="products"></ul>
+    </div>
+
+    <div class="right">
+        <h2>Cart</h2>
+        <ul id="cart"></ul>
+        <h3 id="total">Total: 0</h3>
+        <button onclick="checkout()">Checkout</button>
+        <button onclick="downloadInvoice()">Invoice</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
